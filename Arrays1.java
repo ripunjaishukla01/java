@@ -25,6 +25,10 @@ public class Arrays1 {
 
         for (int i = 0; i < arr1.length; i++) {
             System.out.println(arr1[i]);
+
+            public static void main(String[] args) {
+                
+            }
         }
     }
 }
