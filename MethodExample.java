@@ -3,8 +3,8 @@ public class MethodExample {
         System.out.println("Hello, Welcome to Java!");
     }
 
-    int add(int a, int b) {
-        return a + b;
+    int mul(int a, int b) {
+        return a * b;
     }
 
     public static void main(String[] args) {
@@ -12,7 +12,6 @@ public class MethodExample {
 
         obj.main();
 
-        int sum = obj.add(5, 10);
-        System.out.println("Sum = " + sum);
-    }
+        int mul = obj.mul(5, 10);
+        System.out.println("mul ="  mul);    }
 }
