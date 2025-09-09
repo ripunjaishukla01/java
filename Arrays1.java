@@ -1,4 +1,3 @@
-
 public class Arrays1 {
     public static void main(String[] args) {
         int[] arr = new int[5];
@@ -11,24 +10,25 @@ public class Arrays1 {
         char[] arr1 = { 'a', 'b', 'c', 'd', 'e' };
         String[] arr2 = { "Apple", "Orange", "Mango" };
 
+        // Print string array using for-each loop
         for (String element : arr2) {
             System.out.println(element);
         }
 
-        System.out.println(arr.length);
+        // Print length of integer array
+        System.out.println("Length of arr: " + arr.length);
+
+        // Print integer array elements and their sum
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
-            sum = sum + arr[i];
+            sum += arr[i];
         }
-        System.out.println(sum);
+        System.out.println("Sum of arr elements: " + sum);
 
+        // Print char array elements
         for (int i = 0; i < arr1.length; i++) {
             System.out.println(arr1[i]);
-
-            public static void main(String[] args) {
-                
-            }
         }
     }
 }
