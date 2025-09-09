@@ -1,10 +1,10 @@
-
 import java.util.Scanner;
 
-public class Example117 {
+public class Example119 {
+
     static void pattern(int n) {
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j <= i; j++) {
+        for (int i = n; i >= 1; i--) { // row loop (decreasing)
+            for (int j = 1; j <= i; j++) { // column loop (stars per row)
                 System.out.print("* ");
             }
             System.out.println();
@@ -13,10 +13,9 @@ public class Example117 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number");
+        System.out.println("Enter the number:");
         int n = sc.nextInt();
         pattern(n);
-
         sc.close();
     }
 }
