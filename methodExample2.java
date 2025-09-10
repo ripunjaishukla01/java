@@ -1,7 +1,8 @@
-public class methodExample2 {
-    void main() {
-        System.out.println("heLLO");
+import java.util.Scanner;
 
+public class methodExample2 {
+    void greet() {
+        System.out.println("Hello  Ripunjai");
     }
 
     int mul(int a, int b) {
@@ -9,10 +10,20 @@ public class methodExample2 {
     }
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         methodExample2 obj = new methodExample2();
-        obj.main();
-        int sum = obj.mul(5, 10);
-        String mul;
-        System.out.println("mul = " * mul);
+
+        obj.greet();
+
+        System.out.print("Enter the first number: ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter the second number: ");
+        int b = sc.nextInt();
+
+        int result = obj.mul(a, b);
+        System.out.println("mul = " + result);
+
+        sc.close();
     }
 }
