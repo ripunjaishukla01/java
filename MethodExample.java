@@ -1,5 +1,7 @@
+import java.util.Scanner;
+
 public class MethodExample {
-    void main() {
+    void greet() {
         System.out.println("Hello, Welcome to Java!");
     }
 
@@ -8,10 +10,20 @@ public class MethodExample {
     }
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
         MethodExample obj = new MethodExample();
+        obj.greet();
 
-        obj.main();
+        System.out.println("Enter the first number: ");
+        int a = sc.nextInt();
 
-        int mul = obj.mul(5, 10);
-        System.out.println("mul ="  mul);    }
+        System.out.println("Enter the second number: ");
+        int b = sc.nextInt();
+
+        int result = obj.mul(a, b); // call multiplication method
+        System.out.println("mul = " + result);
+
+        sc.close();
+    }
 }
