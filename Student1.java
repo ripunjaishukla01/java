@@ -1,10 +1,9 @@
-
 class Student {
     String name;
     int age;
 
     public void printName() {
-        System.out.println("writing something");
+        System.out.println(this.name);
     }
 
     public void printInfo() {
@@ -13,17 +12,17 @@ class Student {
     }
 
     Student() {
-        System.out.println("constructor called ");
+        System.out.println("Constructor called");
     }
 }
 
 public class Student1 {
     public static void main(String[] args) {
         Student s1 = new Student();
-        s1.name = "Ripumjai";
+        s1.name = "Ripunjai";
         s1.age = 20;
 
         s1.printInfo();
+        s1.printName();
     }
-
 }
