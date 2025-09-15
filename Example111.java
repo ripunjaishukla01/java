@@ -1,14 +1,14 @@
-
 import java.util.Scanner;
 
 public class Example111 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a day number to know the Year");
-        int YearNum = sc.nextInt();
-        switch (YearNum) {
+        System.out.println("Enter a month number (1-12): ");
+        int monthNum = sc.nextInt();
+
+        switch (monthNum) {
             case 1:
-                System.out.println("january");
+                System.out.println("January");
                 break;
             case 2:
                 System.out.println("February");
@@ -23,10 +23,10 @@ public class Example111 {
                 System.out.println("May");
                 break;
             case 6:
-                System.out.println("june");
+                System.out.println("June");
                 break;
             case 7:
-                System.out.println("july");
+                System.out.println("July");
                 break;
             case 8:
                 System.out.println("August");
@@ -44,8 +44,10 @@ public class Example111 {
                 System.out.println("December");
                 break;
             default:
+                System.out.println("Invalid month number! Please enter 1–12.");
                 break;
         }
 
+        sc.close();
     }
 }
